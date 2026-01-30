@@ -3,133 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock, Paper and Scissors</title>
+  <title>Rock</title>
+  <script src="logicRPS.js" defer></script>
 </head>
 <body>
-  <p>Rock, Paper and Scissor Game!
+  <p>Rock, Paper and Scissor Game! 
     Pick One to play with computer
 
   </p>
 
-  <button onclick=" 
-
-
-      let randomNumber1 = Math.random(); 
-
-      let computerMove1 = '';
-      
-
-          if(randomNumber1 >= 0 && randomNumber1 <= 1/3){
-            computerMove1 = 'Rock';
-          }else if(randomNumber1  > 1/3 && randomNumber1  <= 2/3) {
-            computerMove1 = 'Paper';
-            
-          }else if(randomNumber1  > 2/3 && randomNumber1  <= 1) {
-            computerMove1 = 'Scissor';
-          }
-          console.log(computerMove1)
-      
-      let resultRock = '';
-
-
-          if(computerMove1 === 'Rock'){
-            resultRock = 'Tie, Worse than Losing, Looser'
-          }else if(computerMove1 === 'Paper') {
-            resultRock = 'You lose, Lossserrrrrr lollll'
-          }else if(computerMove1 === 'Scissor'){
-            resultRock = 'YOu Win! , Must be mistake loser'
-
-          }
-      console.log(resultRock)
-
-      alert(`You chose Rock and computer chose ${computerMove1}, So ${resultRock}`)
-
-      
-"
->  
-  Rock
-</button>
+  <button onclick="playGame('Rock')">Rock</button>
  
 
   <!-- //Paper -->
 
-<button onclick=" 
+  <button onclick=" playGame('Paper')">Paper</button>
 
 
-  let randomNumber = Math.random(); 
-
-  let computerMove = '';
-  
-
-      if(randomNumber  >= 0 && randomNumber  <= 1/3){
-        computerMove = 'Rock';
-      }else if(randomNumber > 1/3 && randomNumber <= 2/3) {
-        computerMove = 'Paper';
-        
-      }else if(randomNumber > 2/3 && randomNumber <= 1) {
-        computerMove = 'Scissor';
-      }
-  console.log(computerMove)
-  
-   let result = '';
-      if(computerMove === 'Paper'){
-        result = 'Tie, Worse than Losing, Looser'
-      }else if(computerMove === 'Scissor') {
-        result = 'You lose, Lossserrrrrr lollll'
-      }else if(computerMove === 'Rock'){
-        result = 'YOu Win! , Must be mistake loser'
-
-      }
-  console.log(result)
-
-  alert(`You chose Paper and computer chose ${computerMove}, So ${result}`)
-
-  
-"  
->
-    Paper
-</button>
+  <!-- // Scissor -->
 
 
-<!-- // Scissor -->
-
-
-<button onclick=" 
-  let randomNumber2 = Math.random(); 
-
-  let computerMove2 = '';
-  
-
-    if(randomNumber2 >= 0 && randomNumber2 <= 1/3){
-      computerMove2 = 'Rock';
-    }else if(randomNumber2 > 1/3 && randomNumber2 <= 2/3) {
-      computerMove2 = 'Paper';
-      
-    }else if(randomNumber2 > 2/3 && randomNumber2 <= 1) {
-      computerMove2 = 'Scissor';
-    }
-    console.log(computerMove2)
-    
-   let resultScissor = '';
-
-
-      if(computerMove2 === 'Scissor'){
-        resultScissor = 'Tie, Worse than Losing, Looser'
-      }else if(computerMove2 === 'Rock') {
-        resultScissor = 'You lose, Lossserrrrrr lollll'
-      }else if(computerMove2 === 'Paper'){
-        resultScissor = 'YOu Win! , Must be mistake loser'
-
-      }
-      console.log(resultScissor)
-
-  alert(`You chose Scissor and computer chose ${computerMove2}, So ${resultScissor}`)
-
-  
-"   
->     Scissor
-
-</button>
+  <button onclick="playGame('Scissor')">Scissor</button>
   
 </body>
 </html>
